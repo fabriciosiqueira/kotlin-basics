@@ -3,7 +3,8 @@ package br.com.grupoliberal
 fun main(args: Array<String>) {
     
     //if
-    val tipoDeRota = "A_PE" // A_PE  CARRO ONIBUS E TREM
+    val tipoDeRota = "adsadad" // A_PE  CARRO ONIBUS E TREM
+    //nao é recomendado fazer if encadeados
     if(tipoDeRota == "TREM") {
         println("tracando rota a pe")
     } else {
@@ -19,6 +20,23 @@ fun main(args: Array<String>) {
     }
 
     //when
+    when(tipoDeRota) {
+        "A_PE" -> {
+            println("tracando rota a pe")
+        }
+        "CARRO" -> {
+            println("tracando rota a carro")
+        }
+        "ONIBUS" -> {
+            println("tracando rota a onibus")
+        }
+        "TREM" -> {
+            println("tracando rota a trem")
+        }
+        else -> {
+            println("rota nao implementada")
+        }
+    }
 
 
 
