@@ -16,7 +16,7 @@ fun main(args: Array<String>) {
     printElements(linkedSet)
 
     mutableList.add(5)
-    printElements(mutableList)
+//    printElements(mutableList)
 
 
     //teste de perfomace
